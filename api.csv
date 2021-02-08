@@ -1,15 +1,14 @@
 API name, Request Type, Parameters, Return Value
-userLogin, post, (emailId | password), void
-forgotPassword, post, (emailId), void
-shortlistProduct, post, (userId | productId), void
-viewShortlistedProducts, get, (userId), void
-addProductToCart, post, (userId | productId), void
-viewCartProducts, get, (userId), void
-buyProduct, post, (userId | productId), void
-viewPurchaseHistory, get, (userId | productId), void
-listProduct, post, (userId | productId | details), void
-delistProduct, post, (userId | productId), void
-editProductDetails, post, (userId | productId), void
-productStatus, get, (userId | productId), void
-viewProductStats, get, (userId | productId), void
-
+userLogin, post, emailId | password, void
+forgotPassword, post, emailId, void
+shortlistProduct, post, userId | productId, void
+viewShortlistedProducts, get, userId, list of shortlisted products
+addProductToCart, post, userId | productId, void
+viewCartProducts, get, userId, list of products in cart
+buyProduct, post, userId | productId, void
+viewPurchaseHistory, get, userId | productId, list of products purchased by the user
+listProduct, post, userId | productId | details, void
+delistProduct, post, userId | productId, void
+editProductDetails, post, userId | productId, void 
+productStatus, get, userId | productId, shows the current status of the product. For example if the product was sold off
+viewProductStats, get, userId | productId, shows the statistics related to the product. For example how many users visited the product
