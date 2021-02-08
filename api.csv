@@ -1,15 +1,15 @@
 API name, Request Type, Parameters, Return Value
-userLogin, post, (emailId, password), void
+userLogin, post, (emailId | password), void
 forgotPassword, post, (emailId), void
-shortlistProduct, post, (userId, productId), void
+shortlistProduct, post, (userId | productId), void
 viewShortlistedProducts, get, (userId), void
-addProductToCart, post, (userId, productId), void
+addProductToCart, post, (userId | productId), void
 viewCartProducts, get, (userId), void
-buyProduct, post, (userId, productId), void
-viewPurchaseHistory, get, (userId, productId), void
-listProduct, post, (userId, productId, details), void
-delistProduct, post, (userId, productId), void
-editProductDetails, post, (userId, productId), void
-productStatus, get, (userId, productId), void
-viewProductStats, get, (userId, productId), void
+buyProduct, post, (userId | productId), void
+viewPurchaseHistory, get, (userId | productId), void
+listProduct, post, (userId | productId | details), void
+delistProduct, post, (userId | productId), void
+editProductDetails, post, (userId | productId), void
+productStatus, get, (userId | productId), void
+viewProductStats, get, (userId | productId), void
 
